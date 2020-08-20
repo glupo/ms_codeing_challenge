@@ -1,0 +1,11 @@
+<div class="col mb-4">
+  <div class="card h-100">
+    <img class="card-img-top" src="<%= recipe.photo.url %>" alt="Recipe photo">
+    <div class="card-body">
+      <h5 class="card-title"><%= recipe.title%></h4>
+    </div>
+    <div class="card-footer">
+      <a href="<%= recipe_path(recipe.id) %>" class="btn btn-primary float-right">Details</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,91 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://cdn.contentful.com/spaces/cfexampleapi/environments/master/entries
+    body:
+      encoding: UTF-8
+      string: ''
+    headers:
+      X-Contentful-User-Agent:
+      - sdk contentful.rb/2.15.4; platform ruby/2.7.1; os macOS/19;
+      Authorization:
+      - Bearer b4c0n73n7fu1
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Accept-Encoding:
+      - gzip
+      Connection:
+      - close
+      Host:
+      - cdn.contentful.com
+      User-Agent:
+      - http.rb/4.4.1
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Connection:
+      - close
+      Content-Length:
+      - '2078'
+      Access-Control-Allow-Headers:
+      - Accept,Accept-Language,Authorization,Cache-Control,Content-Length,Content-Range,Content-Type,DNT,Destination,Expires,If-Match,If-Modified-Since,If-None-Match,Keep-Alive,Last-Modified,Origin,Pragma,Range,User-Agent,X-Http-Method-Override,X-Mx-ReqToken,X-Requested-With,X-Contentful-Version,X-Contentful-Content-Type,X-Contentful-Organization,X-Contentful-Skip-Transformation,X-Contentful-User-Agent,X-Contentful-Enable-Alpha-Feature
+      Access-Control-Allow-Methods:
+      - GET,HEAD,OPTIONS
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Expose-Headers:
+      - Etag
+      Access-Control-Max-Age:
+      - '86400'
+      Cf-Environment-Id:
+      - master
+      Cf-Environment-Uuid:
+      - b0e55a5c-6ee0-4c81-b32a-3bd22a568e43
+      Cf-Organization-Id:
+      - 7BLDDu2FYCNoN4QIWys1BR
+      Cf-Space-Id:
+      - cfexampleapi
+      Content-Encoding:
+      - gzip
+      Content-Type:
+      - application/vnd.contentful.delivery.v1+json
+      Contentful-Api:
+      - cda_cached
+      Etag:
+      - W/"5775157113592862426"
+      Server:
+      - Contentful
+      X-Content-Type-Options:
+      - nosniff
+      X-Contentful-Region:
+      - us-east-1
+      X-Contentful-Route:
+      - "/spaces/:space/environments/:environment/entries"
+      Accept-Ranges:
+      - bytes
+      Date:
+      - Thu, 20 Aug 2020 17:15:25 GMT
+      Via:
+      - 1.1 varnish
+      Age:
+      - '4285'
+      X-Served-By:
+      - cache-hhn4023-HHN
+      X-Cache:
+      - HIT
+      X-Cache-Hits:
+      - '1'
+      Vary:
+      - Accept-Encoding
+      X-Contentful-Request-Id:
+      - b0a3be44-cb69-4087-ae72-ede3778c3ad2
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        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
+    http_version: 
+  recorded_at: Thu, 20 Aug 2020 17:15:25 GMT
+recorded_with: VCR 4.0.0

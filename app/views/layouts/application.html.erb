@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>MsCodingChallenge</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="pt-5 mt-5">
+    <nav class="navbar fixed-top navbar-dark bg-dark">
+      <%= link_to("Recipes!", root_path, class: "navbar-brand mb-0 h1")%>
+    </nav>
+    <%= yield %>
+  </body>
+</html>

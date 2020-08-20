@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <img src="<%= @recipe.photo.url %>" alt="Recipe photo" class="img-fluid">
+    </div>
+    <div class="col-6">
+      <div class="jumbotron jumbotron-fluid bg-transparent">
+        <div class="container">
+          <h2 class="display-5"><%= @recipe.title %></h2>
+          <p class="lead"><%= CommonMarker.render_html(@recipe.description, :DEFAULT).html_safe %></p>
+          <div class="row">
+            <div class="col">
+              <% @recipe.tags.each do |tag| %>
+                <span class="badge badge-info"> <%= tag.name %> </span>
+              <% end %>
+            </div>
+            <div class="col">
+              <% if @recipe.chef %>
+                  Made by:
+                  <%= @recipe.chef.name %>
+                </div>
+              <% end %>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
